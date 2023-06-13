@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'Building KTOR'
+                echo 'Building KTOR server'
             }
         }
         stage('Test') {
