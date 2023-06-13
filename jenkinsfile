@@ -1,0 +1,20 @@
+pipeline {
+    agent any
+    stages {
+        stage('Build') {
+            steps {
+                echo 'Building KTOR'
+            }
+        }
+        stage('Test') {
+            steps {
+                echo 'Testing KTOR'
+            }
+        }
+        stage ('Deploy') {
+            steps {
+                echo "Deploy KTOR to Lambda"
+            }
+        }
+    }
+}
